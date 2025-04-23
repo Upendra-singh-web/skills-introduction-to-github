@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daimond Pattern</title>
+</head>
+<body>
+    <script>
+       let n = 5; // Number of Rows for the upper half
+       
+       //Upper Half of the diamond
+       for (let i = 1; i <= n; i++) {
+        let start = ' '.repeat(n - i);
+        start += '*'.repeat(2 * i - 1);
+        console.log(start);
+       }
+
+       // Lower half of the daimond
+       for (let i = n - 1; i >= 1; i--) {
+            let start = ' '.repeat(n - i);
+            start += '*'.repeat(2 * i - 1);
+            console.log(start);
+       }
+    </script>
+    
+</body>
+</html>
